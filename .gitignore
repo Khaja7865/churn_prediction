@@ -1,0 +1,37 @@
+# Python
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/
+venv/
+env/
+
+# Generated processed data
+# Keep metadata JSON if desired; ignore generated arrays/CSV
+# data/processed/*.csv
+data/processed/*.npy
+
+# Generated model artifacts
+models/*.pkl
+
+# Generated outputs/logs/artifacts
+outputs/*
+logs/*
+artifacts/*
+
+# MLflow
+mlruns/
+mlflow.db
+
+# Editor / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Keep project directories in Git
+!models/.gitkeep
+!outputs/.gitkeep
+!logs/.gitkeep
+!artifacts/.gitkeep
+!data/processed/.gitkeep

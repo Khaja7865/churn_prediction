@@ -1,0 +1,49 @@
+# Churn Prediction MLOps Pipeline Configuration
+
+project:
+  name: "churn-prediction"
+  random_seed: 42
+
+data:
+  raw_path: "data/raw/churn.csv"
+  new_data_path: "data/raw/new_churn.csv"
+  processed_dir: "data/processed"
+  target_column: "Churn"
+  id_column: "customerID"
+
+split:
+  test_size: 0.20
+  random_state: 42
+
+model:
+  type: "RandomForestClassifier"
+  n_estimators: 200
+  max_depth: 10
+  random_state: 42
+  class_weight: "balanced"
+
+mlflow:
+  tracking_uri: "sqlite:///mlflow.db"
+  experiment_name: "Churn-Prediction-MLOps"
+  
+registry:
+  model_name: "ChurnPredictionModel"
+  production_stage: "Production"
+
+quality_gate:
+  metric: "roc_auc"
+  minimum_value: 0.70
+
+lab9:
+  repetitions: 1
+
+paths:
+  model: "models/random_forest_model.pkl"
+  preprocessor: "models/preprocessor.pkl"
+  scaler: "models/scaler.pkl"
+  ohe: "models/ohe.pkl"
+  evaluation_report: "reports/production_model_report.json"
+  quality_gate_report: "artifacts/quality_gate_report.json"
+  failure_report: "reports/failure_report.json"
+  inference_output: "outputs/production_inference.csv"
+  pipeline_log: "logs/churn_prediction_pipeline_run_log.json"

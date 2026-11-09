@@ -1,0 +1,89 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20261106221141
+Username: KHAJAMOIN\skkha
+RunAs User: KHAJAMOIN\skkha
+Configuration Name: 
+Machine: KHAJAMOIN (Microsoft Windows NT 10.0.26200.0)
+Host Application: C:\windows\System32\WindowsPowerShell\v1.0\powershell.exe -noexit -command try { . "c:\Users\skkha\AppData\Local\Programs\Microsoft VS Code\e646868227\resources\app\out\vs\workbench\contrib\terminal\common\scripts\shellIntegration.ps1" } catch {}
+Process ID: 19372
+PSVersion: 5.1.26100.9711
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.9711
+BuildVersion: 10.0.26100.9711
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is .\lab1_to_lab10_log.txt
+
+==================================
+RUNNING LAB 1 : 01_load_data.py
+==================================
+
+LAB 1 COMPLETED SUCCESSFULLY
+
+==================================
+RUNNING LAB 2 : 02_validate_data.py
+==================================
+
+LAB 2 COMPLETED SUCCESSFULLY
+
+==================================
+RUNNING LAB 3 : 03_preprocessing.py
+==================================
+
+LAB 3 COMPLETED SUCCESSFULLY
+
+==================================
+RUNNING LAB 4 : 04_validate_outputs.py
+==================================
+
+LAB 4 COMPLETED SUCCESSFULLY
+
+==================================
+RUNNING LAB 5 : 05_train_registry.py
+==================================
+
+LAB 5 COMPLETED SUCCESSFULLY
+
+==================================
+RUNNING LAB 6 : 06_model_evaluation.py
+==================================
+
+LAB 6 COMPLETED SUCCESSFULLY
+
+==================================
+RUNNING LAB 7 : 07_quality_gate.py
+==================================
+
+LAB 7 COMPLETED SUCCESSFULLY
+
+==================================
+RUNNING LAB 8 : 08_automate_lifecycle.py
+==================================
+
+LAB 8 COMPLETED SUCCESSFULLY
+
+==================================
+RUNNING LAB 9 : 09_inference.py
+==================================
+
+LAB 9 COMPLETED SUCCESSFULLY
+
+==================================
+RUNNING LAB 10 : 10_failure_injection.py
+==================================
+
+LAB 10 FAILED. STOPPING.
+**********************
+Windows PowerShell transcript end
+End time: 20261106221250
+**********************
+
+========================================
+LAB 10 RE-RUN: SUCCESSFUL
+Failure injection and recovery tests PASSED.
+LABS 1 TO 10 COMPLETED SUCCESSFULLY.
+========================================

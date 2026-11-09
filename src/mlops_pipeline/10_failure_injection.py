@@ -1,4 +1,4 @@
-import json
+﻿import json
 import os
 import shutil
 import subprocess
@@ -15,9 +15,9 @@ import yaml
 
 # Project root:
 # churn-prediction/
-# ├── src/
-# │   └── mlops_pipeline/
-# │       └── 10_failure_injection.py
+# â”œâ”€â”€ src/
+# â”‚   â””â”€â”€ mlops_pipeline/
+# â”‚       â””â”€â”€ 10_failure_injection.py
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
 
 
@@ -229,7 +229,7 @@ def test_missing_model_with_recovery(config):
         configure_mlflow(config)
 
         production_uri = (
-            f"models:/{model_name}/Production"
+            f"models:/{model_name}@Production"
         )
 
         print(
